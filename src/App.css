@@ -1,38 +1,72 @@
-.App {
+:root {
+  --mainDark: #232528;
+  --mainWhite: #f3f3f3;
+
+  --smallFont: 10px;
+  --mediumFont: 20px;
+  --largeFont: 66px;
+}
+
+body {
+  font-family: 'Roboto', sans-serif !important;
+  background: linear-gradient(to left, #141e30, #243b55) !important;
+  color: var(--mainWhite) !important;
+}
+
+.header-color {
+  background: linear-gradient(to right, #3a7bd5, #00d2ff);
+}
+
+.landing-grid {
+  background: linear-gradient(to right, #3a7bd5, #00d2ff);
   text-align: center;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.profile-img {
+  height: 250px;
+  border-radius: 50%;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.banner-text {
+  background-color: var(--mainDark);
+  opacity: 0.8;
+  width: 75%;
+  margin: auto;
+  border-radius: 10px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.banner-text h1 {
+  font-size: var(--largeFont);
+  font-weight: bold;
+  color: var(--mainWhite);
+}
+
+.banner-text hr {
+  border-top: var(--mainWhite) dotted;
+  width: 50%;
+  margin: auto;
+}
+
+.banner-text p {
+  color: var(--mainWhite);
+  font-size: var(--mediumFont);
+  padding: 1em;
+}
+
+.social-links {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  justify-content: space-evenly;
+  width: 50%;
+  margin: auto;
+  color: var(--mainWhite);
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.social-links i {
+  color: var(--mainWhite);
+  font-size: 5em;
+  padding: 8px;
 }
